@@ -1,0 +1,312 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#101426">
+
+    <title>Un pequeño universo para ti</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="universe">
+
+        <!-- FONDO DECORATIVO -->
+
+        <div class="stars"></div>
+        <div class="ambient ambient-one"></div>
+        <div class="ambient ambient-two"></div>
+
+
+        <!-- ENCABEZADO -->
+
+        <header class="header">
+
+            <div class="logo">UNA PEQUEÑA CARTA</div>
+
+            <div class="header-decoration">✧</div>
+
+        </header>
+
+
+        <main>
+
+            <!-- PANTALLA PRINCIPAL -->
+
+            <section class="home-section" id="home">
+
+                <div class="intro">
+
+                    <p class="eyebrow">
+                        UN PEQUEÑO UNIVERSO HECHO PARA TI
+                    </p>
+
+                    <h1>
+                        Para ti,
+                        <span>mi persona favorita.</span>
+                    </h1>
+
+                    <p class="intro-description">
+                        Hay pequeños detalles escondidos en este universo.
+                        Quizás encuentres algo que te recuerde a ti.
+                    </p>
+
+                    <div class="divider">
+                        <span></span>
+                        ✧
+                        <span></span>
+                    </div>
+
+                    <p class="discover-text">
+                        Toca los pequeños detalles que te rodean.
+                    </p>
+
+                </div>
+
+
+                <!-- OBJETOS INTERACTIVOS -->
+
+                <div class="objects-container">
+
+
+                    <!-- FLOR HECHA CON CSS -->
+
+                    <button class="object-button flower-button" data-id="rosa">
+
+                        <span class="flower">
+
+                            <span class="petals">
+
+                                <span class="petal petal-one"></span>
+                                <span class="petal petal-two"></span>
+                                <span class="petal petal-three"></span>
+                                <span class="petal petal-four"></span>
+                                <span class="petal petal-five"></span>
+
+                            </span>
+
+                            <span class="flower-center"></span>
+
+                            <span class="stem"></span>
+
+                            <span class="leaf leaf-left"></span>
+                            <span class="leaf leaf-right"></span>
+
+                        </span>
+
+                        <span class="object-label">
+                            Una pequeña flor
+                        </span>
+
+                    </button>
+
+
+                    <!-- LUNA -->
+
+                    <button class="object-button" data-id="luna">
+
+                        <span class="moon">☾</span>
+
+                        <span class="object-label">
+                            La luna
+                        </span>
+
+                    </button>
+
+
+                    <!-- CORAZÓN -->
+
+                    <button class="object-button" data-id="corazon">
+
+                        <span class="heart">♡</span>
+
+                        <span class="object-label">
+                            Un pequeño corazón
+                        </span>
+
+                    </button>
+
+
+                    <!-- MÚSICA -->
+
+                    <button class="object-button" data-id="musica">
+
+                        <span class="music">♫</span>
+
+                        <span class="object-label">
+                            Una melodía
+                        </span>
+
+                    </button>
+
+                </div>
+
+
+                <!-- CONTADOR DE OBJETOS -->
+
+                <div class="progress-container">
+
+                    <p>
+                        Pequeños detalles descubiertos:
+                        <span id="found-count">0</span>/<span id="total-count">4</span>
+                    </p>
+
+                    <div class="progress-bar">
+
+                        <div class="progress-fill" id="progress-fill"></div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- BOTÓN PARA ABRIR LA CARTA -->
+
+                <button class="main-button" id="open-letter">
+
+                    Abrir mi carta
+
+                    <span>→</span>
+
+                </button>
+
+            </section>
+
+
+            <!-- VENTANA DE MENSAJES SECRETOS -->
+
+            <div class="modal hidden" id="message-modal">
+
+                <div class="modal-card">
+
+                    <button class="close-modal" id="close-modal">
+                        ×
+                    </button>
+
+                    <div class="modal-decoration" id="modal-icon">
+                        ✧
+                    </div>
+
+                    <p class="modal-eyebrow">
+                        UN PEQUEÑO SECRETO
+                    </p>
+
+                    <h2 id="modal-title">
+                        Un pequeño mensaje
+                    </h2>
+
+                    <p id="modal-message"></p>
+
+                    <button class="modal-button" id="continue-button">
+                        Continuar
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- SECCIÓN DE LA CARTA -->
+
+            <section class="letter-section hidden" id="letter-section">
+
+                <div class="letter-top">
+
+                    <p class="eyebrow">
+                       PARA LALI: ALGO QUE VIENE DE MI CORAZÓN
+                    </p>
+
+                    <h2 id="page-heading">
+                        Una carta para ti
+                    </h2>
+
+                    <div class="divider">
+
+                        <span></span>
+                        ✧
+                        <span></span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- HOJA DE LA CARTA -->
+
+                <article class="letter-paper">
+
+                    <div class="paper-decoration">✧</div>
+
+                    <div class="page-content" id="page-content"></div>
+
+                    <p class="page-signature hidden" id="page-signature">
+                        Con cariño.
+                    </p>
+
+                    <div class="paper-bottom-decoration">
+                        ♡
+                    </div>
+
+                </article>
+
+
+                <!-- BOTONES PARA CAMBIAR DE PÁGINA -->
+
+                <div class="page-navigation">
+
+                    <button class="navigation-button" id="previous-page">
+                        ← Anterior
+                    </button>
+
+                    <span id="page-number">
+                        1 / 3
+                    </span>
+
+                    <button class="navigation-button" id="next-page">
+                        Siguiente →
+                    </button>
+
+                </div>
+
+
+                <!-- REGRESAR AL UNIVERSO -->
+
+                <button class="back-home-button" id="back-home">
+
+                    Volver al pequeño universo
+
+                </button>
+
+            </section>
+
+        </main>
+
+
+        <!-- PIE DE PÁGINA -->
+
+        <footer class="footer" id="footer">
+
+            HECHO CON CARIÑO · 2026
+
+        </footer>
+
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
